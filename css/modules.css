@@ -143,68 +143,62 @@ ol > li::before {
   content: none;
 }
 
-  table,
-  blockquote,
-  pre,
-  code,
-  figure,
-  li,
-  hr,
-  ul,
-  ol,
-  a,
-  tr {
-    page-break-inside: avoid;
-  }
+table,
+blockquote,
+pre,
+code,
+figure,
+li,
+hr,
+ul,
+ol,
+a,
+tr {
+  page-break-inside: avoid;
+}
 
-  h1, h2, h3, h4, h5, h6, p, a {
-    orphans: 3;
-    widows: 3;
-  }
+h1, h2, h3, h4, h5, h6, p, a {
+  orphans: 3;
+  widows: 3;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    page-break-after: avoid;
-    page-break-inside: avoid;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
 
-  h1 + p,
-  h2 + p,
-  h3 + p,
-  h4 + p,
-  h5 + p,
-  h6 + p {
-    page-break-before: avoid;
-  }
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  page-break-before: avoid;
+}
 
-  img {
-    page-break-after: auto;
-    page-break-before: auto;
-    page-break-inside: avoid;
-  }
+*, *::before, *::after, *::first-letter, *::first-line {
+  background: none transparent;
+  color: #000;
+  box-shadow: none;
+  text-shadow: none;
+}
 
-  *, *::before, *::after, *::first-letter, *::first-line {
-    background: none transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+a, a:visited {
+  text-decoration: underline;
+}
 
-  a, a:visited {
-    text-decoration: underline;
-  }
+a[href]::after {
+  content: " (" attr(href) ")";
+}
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after,
-  a.no-print-href::after,
-  a.href-no-print::after {
-    content: "";
-  }
+a[href^="#"]::after,
+a[href^="javascript:"]::after,
+a.no-print-href::after,
+a.href-no-print::after {
+  content: "";
+}
