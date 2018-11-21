@@ -94,21 +94,17 @@ img {
   width: 100%;
 }
 
-
 .block {
   display: block;
 }
 
 .inline-block, .ib {
   display: inline-block;
-
-
+}
 
 .valign-middle {
   vertical-align: middle;
 }
-
-
 
 .relative {
   position: relative;
@@ -119,7 +115,6 @@ img {
   position: absolute;
 }
 
-
 .pin-top-left,
 .pin-left-top,
 .pin-tl,
@@ -127,7 +122,6 @@ img {
   top: 0;
   left: 0;
 }
-
 
 ol {
   counter-reset: ol-simple-numbers;
@@ -193,14 +187,12 @@ ol > li::before {
     page-break-inside: avoid;
   }
 
-
   *, *::before, *::after, *::first-letter, *::first-line {
     background: none transparent !important;
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
 
   a, a:visited {
     text-decoration: underline;
@@ -209,8 +201,6 @@ ol > li::before {
   a[href]::after {
     content: " (" attr(href) ")";
   }
-
-
 
   a[href^="#"]::after,
   a[href^="javascript:"]::after,
