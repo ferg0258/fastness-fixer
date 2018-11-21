@@ -1142,23 +1142,6 @@ a:focus, [tabindex="0"]:focus {
   page-break-inside: avoid;
 }
 
-@media print {
-
-  /* stylelint-disable declaration-no-important */
-
-  .no-print {
-    display: none !important;
-    visibility: hidden !important;
-  }
-
-  .print-only,
-  .force-print {
-    display: block !important;
-    visibility: visible !important;
-  }
-
-  /* stylelint-enable */
-
   .visually-hidden.force-print {
     height: auto;
     margin: 0;
@@ -1269,7 +1252,5 @@ a:focus, [tabindex="0"]:focus {
   thead {
     display: table-header-group;
   }
-
-  /* End HTML5 Boilerplate code */
 
 }
